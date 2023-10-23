@@ -17,7 +17,6 @@ public class Pozycja {
 
     @Override
     public String toString() {
-        String format = "%-20s%10.2f%4d%10.2f";
-        return String.format(format, nazwaTowaru, ileSztuk, cena, obliczWartosc());
+        return String.format("%-20s %10.2f zł %4d szt. %10.2f zł", nazwaTowaru, cena, ileSztuk, obliczWartosc());
     }
 }

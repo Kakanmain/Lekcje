@@ -3,17 +3,16 @@ package program;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Zamowienie {
-    public static List<Zamowienie> pozycje = new ArrayList<>();
-    // private Pozycja[] pozycje;
+    private Pozycja[] pozycje;
     int ileDodanych; //Liczba pozycji w zamówieniu
     int maksRozmiar; //Maksymalna liczba pozycji w zamówieniu
 
     public Zamowienie() {
         this.maksRozmiar= 10;
-        // this.pozycje = new Pozycja[maksRozmiar];
-        pozycje.add(this);
+        this.pozycje = new Pozycja[maksRozmiar];
         this.ileDodanych = 0;
     }
 
@@ -57,7 +56,16 @@ public class Zamowienie {
     }
 
     void usunPozycje(int indeks){
-        pozycje.remove(indeks);
+        pozycjeZamowienia.remove(indeks);
+        System.out.println("Pozycja została usunięta.");
     }
+    void edytujPozycje(int indeks){
+
+    }
+
+    void dodajPozycje(int indeks){
+
+    }
+    Scanner scanner = new Scanner(System.in);
 }
 
